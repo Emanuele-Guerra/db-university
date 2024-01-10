@@ -1,0 +1,27 @@
+SELECT YEAR(date_of_birth) AS birth_year
+FROM students
+WHERE YEAR(date_of_birth) = 1990;
+--------------------------------------------------------
+SELECT * FROM `courses` 
+WHERE `cfu` > 10;
+--------------------------------------------------------
+SELECT YEAR(date_of_birth) AS birth_year 
+FROM students 
+WHERE YEAR(date_of_birth) < 1994;
+--------------------------------------------------------
+SELECT * FROM `courses` 
+WHERE `period` = "I semestre" 
+AND `year` = "1";
+--------------------------------------------------------
+SELECT * FROM `exams`
+WHERE DATE(date) = '2020-06-20' AND TIME(hour) > '14:00:00';
+--------------------------------------------------------
+SELECT * FROM `degrees` 
+WHERE `level` = "magistrale";
+--------------------------------------------------------
+SELECT * FROM `departments`;
+--------------------------------------------------------
+SELECT * FROM `teachers` 
+WHERE `phone` IS NULL;
+
+
